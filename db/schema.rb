@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2020_01_18_173711) do
 
   create_table "artists", force: :cascade do |t|
     t.string "name", default: ""
+    t.string "image", default: ""
     t.text "genres", default: [], array: true
     t.integer "popularity"
     t.string "spotify_url"

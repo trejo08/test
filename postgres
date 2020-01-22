@@ -1,0 +1,124 @@
+\d
+\q
+create database skynet;
+\q
+SHOW data_directory;
+select setting from pg_settings where name = 'data_directory';
+\q
+SELECT  "call_schedules"."id" AS t0_r0, "call_schedules"."call_user_id" AS t0_r1, "call_schedules"."patient_id" AS t0_r2, "call_schedules"."scheduled_at" AS t0_r3, "call_schedules"."repeat_every" AS t0_r4, "call_schedules"."created_at" AS t0_r5, "call_schedules"."updated_at" AS t0_r6, "call_schedules"."purpose" AS t0_r7, "call_schedules"."schedulable_id" AS t0_r8, "call_schedules"."schedulable_type" AS t0_r9, "call_schedules"."communication_method" AS t0_r10, "call_schedules"."practice_id" AS t0_r11, "call_logs"."id" AS t1_r0, "call_logs"."call_schedule_id" AS t1_r1, "call_logs"."result" AS t1_r2, "call_logs"."notes" AS t1_r3, "call_logs"."created_at" AS t1_r4, "call_logs"."updated_at" AS t1_r5 FROM "call_schedules" LEFT OUTER JOIN "call_logs" ON "call_logs"."call_schedule_id" = "call_schedules"."id" WHERE "call_schedules"."practice_id" IN (186, 183) AND "call_schedules"."patient_id" = $1 AND "call_logs"."id" IS NULL AND (scheduled_at > '2019-09-09 15:30:01.080676')  ORDER BY "call_schedules"."scheduled_at" ASC LIMIT 1
+;
+SELECT  "call_schedules"."id" AS t0_r0, "call_schedules"."call_user_id" AS t0_r1, "call_schedules"."patient_id" AS t0_r2, "call_schedules"."scheduled_at" AS t0_r3, "call_schedules"."repeat_every" AS t0_r4, "call_schedules"."created_at" AS t0_r5, "call_schedules"."updated_at" AS t0_r6, "call_schedules"."purpose" AS t0_r7, "call_schedules"."schedulable_id" AS t0_r8, "call_schedules"."schedulable_type" AS t0_r9, "call_schedules"."communication_method" AS t0_r10, "call_schedules"."practice_id" AS t0_r11, "call_logs"."id" AS t1_r0, "call_logs"."call_schedule_id" AS t1_r1, "call_logs"."result" AS t1_r2, "call_logs"."notes" AS t1_r3, "call_logs"."created_at" AS t1_r4, "call_logs"."updated_at" AS t1_r5 FROM "call_schedules" LEFT OUTER JOIN "call_logs" ON "call_logs"."call_schedule_id" = "call_schedules"."id" WHERE "call_schedules"."practice_id" IN (186, 183) AND "call_schedules"."patient_id" = $1 AND "call_logs"."id" IS NULL AND (scheduled_at > '2019-09-09 15:30:01.080676')  ORDER BY "call_schedules"."scheduled_at" ASC LIMIT 1  [["patient_id", 25491]];
+
+create database cinema_development;
+
+
+
+
+
+
+
+
+drop database cinema_development;
+create database blockbuster_development;
+
+
+switch blockbuster_development
+;
+
+
+
+insert into movies(name, description) values('test', 'description test');
+select * from movies;
+insert into movies(name, description) values('test 2', 'description test 2');
+select * from movies;
+
+drop database blockbuster_development;
+drop database blockbuster_development;
+create database blockbuster_development;
+
+
+
+
+drop database blockbuster_development;
+
+
+create database blockbuster_development;
+
+
+
+
+
+
+
+
+
+
+
+insert into movies(name, description) values('test', 'description test');
+insert into movies(name, description) values('test 2', 'description test 2');
+select * from movies;
+select * from seats;
+select * from seats;
+
+
+
+
+select * from customers;
+select * from movie_days;
+select * from seats;
+ld
+;
+
+select * from schema_seeds;
+select * from schema_info;
+truncate table schema_seeds;
+truncate table schema_seeds;
+select * from movie_days;
+truncate table schema_seeds;
+select * from movie_days;
+truncate movies;
+truncate cascade movies;
+truncate cascade table movies;
+truncate table movies cascade;
+select * from movies
+select * from movie_days;
+select * from movies;
+select * from movie_days;
+truncate table schema_seeds;
+select * from movies;
+select * from movie_days;
+select * from movie_days where day = 1;
+select * from movies;
+select * from movie_days;
+select * from reservations
+;
+select * from movie_days;
+select * from reservations
+;
+
+drop database blockbuster_development;
+create database blockbuster_development;
+
+
+
+
+drop database blockbuster_development;
+create database blockbuster_development;
+
+
+
+
+
+
+
+truncate table reservations;
+truncate table reservations;
+select * from reservations
+;
+select * form seats;
+select * from seats;
+select * from seats;
+
+\q
+\l
+\s postgres
