@@ -48,3 +48,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails', group: :development
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'rspotify'
+
+gem 'responders'
+gem 'active_model_serializers', '0.10.9'
+gem 'fast_jsonapi'

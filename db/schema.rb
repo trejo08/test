@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2020_01_18_173711) do
 
   create_table "albums", force: :cascade do |t|
     t.string "name"
+    t.string "image"
     t.string "spotify_url"
     t.integer "total_tracks"
     t.integer "spotify_id"
@@ -32,7 +33,7 @@ ActiveRecord::Schema.define(version: 2020_01_18_173711) do
     t.text "genres", default: [], array: true
     t.integer "popularity"
     t.string "spotify_url"
-    t.integer "spotify_id"
+    t.string "spotify_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
