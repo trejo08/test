@@ -27,3 +27,4 @@
 /config/master.key
 functions.txt
 looper.sh
+.env

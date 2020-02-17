@@ -1,0 +1,8 @@
+Dockerfile
+.gitignore
+.ruby-version
+docker-compose
+Procfile
+README.md
+tmp/
+log/

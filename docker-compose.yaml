@@ -1,0 +1,25 @@
+version: "3"
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+      - bundle_path:/bundle # New
+    environment:
+      - BUNDLE_PATH=/bundle/vendor #New
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=podtgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=ayenda
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  bundle_path: # New
+  postgres-data:
